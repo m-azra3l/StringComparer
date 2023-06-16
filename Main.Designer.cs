@@ -34,6 +34,7 @@
             progressBar1 = new ProgressBar();
             compareBtn = new Button();
             diffLabel = new Label();
+            textBox4 = new TextBox();
             SuspendLayout();
             // 
             // textBox1
@@ -63,7 +64,7 @@
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Difference";
             textBox3.ScrollBars = ScrollBars.Both;
-            textBox3.Size = new Size(1211, 213);
+            textBox3.Size = new Size(555, 213);
             textBox3.TabIndex = 2;
             // 
             // progressBar1
@@ -95,12 +96,23 @@
             diffLabel.TextAlign = ContentAlignment.MiddleCenter;
             diffLabel.Visible = false;
             // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(739, 605);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Difference";
+            textBox4.ScrollBars = ScrollBars.Both;
+            textBox4.Size = new Size(555, 213);
+            textBox4.TabIndex = 6;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1378, 844);
+            Controls.Add(textBox4);
             Controls.Add(diffLabel);
             Controls.Add(compareBtn);
             Controls.Add(progressBar1);
@@ -124,5 +136,6 @@
         private ProgressBar progressBar1;
         private Button compareBtn;
         private Label diffLabel;
+        private TextBox textBox4;
     }
 }
