@@ -31,9 +31,6 @@ namespace StringComparer
                 return;
             }
 
-            progressBar1.Maximum = Math.Max(text1.Length, text2.Length);
-            progressBar1.Value = 0;
-
             for (int i = 0; i < Math.Min(text1.Length, text2.Length); i++)
             {
                 if (text1[i] != text2[i])
@@ -47,20 +44,18 @@ namespace StringComparer
                     differences1 += "  ";
                     differences2 += "  ";
                 }
-                progressBar1.Value++;
             }
-            progressBar1.Value = 100;
-            textBox3.Text = differences1;
-            textBox4.Text = differences2;
 
             if (differenceCount == 0)
             {
+                diffLabel.ForeColor = Color.Green;
                 diffLabel.Visible = true;
                 diffLabel.Text = "No differences";
             }
 
             else
             {
+                diffLabel.ForeColor = Color.Red;
                 diffLabel.Visible = true;
                 diffLabel.Text = $"Differences: {differenceCount}";
             }
@@ -93,6 +88,5 @@ namespace StringComparer
                 compareBtn_Click(this, new EventArgs());
             }
         }
-
     }
 }
