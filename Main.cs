@@ -15,6 +15,7 @@ namespace StringComparer
         public Main()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void compareBtn_Click(object sender, EventArgs e)
@@ -57,6 +58,19 @@ namespace StringComparer
             {
                 diffLabel.Visible = true;
                 diffLabel.Text = $"Differences: {differenceCount}";
+            }
+        }
+
+        private void abtBtn_Click(object sender, EventArgs e)
+        {
+            abtPanel.Visible = true;
+        }
+
+        private void Main_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                abtPanel.Visible = false;
             }
         }
 
