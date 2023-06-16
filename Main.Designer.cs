@@ -111,7 +111,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            BackColor = SystemColors.Desktop;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(1378, 844);
             Controls.Add(textBox4);
             Controls.Add(diffLabel);
