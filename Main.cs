@@ -63,7 +63,16 @@ namespace StringComparer
 
         private void abtBtn_Click(object sender, EventArgs e)
         {
-            abtPanel.Visible = true;
+            if(abtPanel.Visible == true)
+            {
+                abtBtn.Text = "Close";
+                abtPanel.Visible = false;
+            }                
+            else
+            {
+                abtBtn.Text = "About";
+                abtPanel.Visible = true;
+            }
         }
 
         private void Main_KeyDown(object sender, KeyEventArgs e)
