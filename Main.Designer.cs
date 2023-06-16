@@ -63,6 +63,7 @@
             // 
             // textBox3
             // 
+            textBox3.BackColor = SystemColors.Window;
             textBox3.Location = new Point(83, 519);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
@@ -74,6 +75,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.BackColor = SystemColors.Window;
             progressBar1.Location = new Point(83, 464);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(1211, 34);
@@ -104,6 +106,7 @@
             // 
             // textBox4
             // 
+            textBox4.BackColor = SystemColors.Window;
             textBox4.Location = new Point(739, 519);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
@@ -136,13 +139,13 @@
             // 
             // textBox5
             // 
+            textBox5.BackColor = SystemColors.Window;
             textBox5.Location = new Point(3, 3);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Compared String";
             textBox5.ReadOnly = true;
             textBox5.ScrollBars = ScrollBars.Both;
-            textBox5.Size = new Size(585, 462);
+            textBox5.Size = new Size(585, 512);
             textBox5.TabIndex = 2;
             // 
             // Main
@@ -150,7 +153,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            BackColor = SystemColors.Control;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1378, 844);
             Controls.Add(abtPanel);
             Controls.Add(abtBtn);

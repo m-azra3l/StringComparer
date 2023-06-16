@@ -27,7 +27,7 @@ namespace StringComparer
             string differences2 = "";
             if (String.IsNullOrWhiteSpace(text1) || String.IsNullOrWhiteSpace(text2))
             {
-                MessageBox.Show("","ERROR");
+                MessageBox.Show("", "ERROR");
                 return;
             }
 
@@ -68,15 +68,17 @@ namespace StringComparer
 
         private void abtBtn_Click(object sender, EventArgs e)
         {
-            if(abtPanel.Visible == true)
+            if (abtPanel.Visible == false)
             {
-                abtBtn.Text = "Close";
-                abtPanel.Visible = false;
-            }                
+                abtBtn.Width = 125;
+                abtBtn.Text = "Close About";
+                abtPanel.Visible = true;
+            }
             else
             {
+                abtBtn.Width = 112;
                 abtBtn.Text = "About";
-                abtPanel.Visible = true;
+                abtPanel.Visible = false;
             }
         }
 
