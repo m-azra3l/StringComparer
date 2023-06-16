@@ -25,7 +25,7 @@ namespace StringComparer
             int differenceCount = 0;
             if (String.IsNullOrWhiteSpace(text1) || String.IsNullOrWhiteSpace(text2))
             {
-                MessageBox.Show("", "ERROR");
+                MessageBox.Show("None of the inputs can be left empty.\nPlease fill them up before proceeding.", "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
