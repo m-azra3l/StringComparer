@@ -35,6 +35,7 @@
             abtBtn = new Button();
             abtPanel = new Panel();
             textBox5 = new TextBox();
+            resetBtn = new Button();
             abtPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,20 +63,22 @@
             // 
             // compareBtn
             // 
+            compareBtn.BackColor = Color.Green;
             compareBtn.FlatStyle = FlatStyle.Flat;
+            compareBtn.ForeColor = Color.White;
             compareBtn.Location = new Point(186, 15);
             compareBtn.Name = "compareBtn";
             compareBtn.Size = new Size(112, 34);
             compareBtn.TabIndex = 4;
             compareBtn.Text = "Compare";
-            compareBtn.UseVisualStyleBackColor = true;
+            compareBtn.UseVisualStyleBackColor = false;
             compareBtn.Click += compareBtn_Click;
             // 
             // diffLabel
             // 
             diffLabel.AutoSize = true;
             diffLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            diffLabel.Location = new Point(345, 17);
+            diffLabel.Location = new Point(531, 17);
             diffLabel.Name = "diffLabel";
             diffLabel.Size = new Size(78, 32);
             diffLabel.TabIndex = 5;
@@ -85,13 +88,15 @@
             // 
             // abtBtn
             // 
+            abtBtn.BackColor = SystemColors.MenuHighlight;
             abtBtn.FlatStyle = FlatStyle.Flat;
+            abtBtn.ForeColor = Color.White;
             abtBtn.Location = new Point(17, 15);
             abtBtn.Name = "abtBtn";
             abtBtn.Size = new Size(112, 34);
             abtBtn.TabIndex = 7;
             abtBtn.Text = "About";
-            abtBtn.UseVisualStyleBackColor = true;
+            abtBtn.UseVisualStyleBackColor = false;
             abtBtn.Click += abtBtn_Click;
             // 
             // abtPanel
@@ -115,6 +120,20 @@
             textBox5.Size = new Size(585, 512);
             textBox5.TabIndex = 2;
             // 
+            // resetBtn
+            // 
+            resetBtn.BackColor = Color.Red;
+            resetBtn.FlatStyle = FlatStyle.Flat;
+            resetBtn.ForeColor = Color.White;
+            resetBtn.Location = new Point(357, 15);
+            resetBtn.Name = "resetBtn";
+            resetBtn.Size = new Size(112, 34);
+            resetBtn.TabIndex = 9;
+            resetBtn.Text = "Reset";
+            resetBtn.UseVisualStyleBackColor = false;
+            resetBtn.Click += resetBtn_Click;
+            resetBtn.KeyDown += Main_KeyDown;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -122,6 +141,7 @@
             AutoSize = true;
             BackColor = SystemColors.Control;
             ClientSize = new Size(1297, 684);
+            Controls.Add(resetBtn);
             Controls.Add(abtPanel);
             Controls.Add(abtBtn);
             Controls.Add(diffLabel);
@@ -133,6 +153,7 @@
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "String Comparer";
+            KeyDown += Main_KeyDown;
             abtPanel.ResumeLayout(false);
             abtPanel.PerformLayout();
             ResumeLayout(false);
@@ -148,5 +169,6 @@
         private Button abtBtn;
         private Panel abtPanel;
         private TextBox textBox5;
+        private Button resetBtn;
     }
 }

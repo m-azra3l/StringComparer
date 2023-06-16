@@ -23,8 +23,6 @@ namespace StringComparer
             string text1 = textBox1.Text;
             string text2 = textBox2.Text;
             int differenceCount = 0;
-            string differences1 = "";
-            string differences2 = "";
             if (String.IsNullOrWhiteSpace(text1) || String.IsNullOrWhiteSpace(text2))
             {
                 MessageBox.Show("", "ERROR");
@@ -34,16 +32,7 @@ namespace StringComparer
             for (int i = 0; i < Math.Min(text1.Length, text2.Length); i++)
             {
                 if (text1[i] != text2[i])
-                {
                     differenceCount++;
-                    differences1 += $"{text1[i]} ";
-                    differences2 += $"{text2[i]} ";
-                }
-                else
-                {
-                    differences1 += "  ";
-                    differences2 += "  ";
-                }
             }
 
             if (differenceCount == 0)
@@ -81,12 +70,17 @@ namespace StringComparer
         {
             if (e.KeyCode == Keys.Escape)
             {
+                abtBtn.Width = 112;
+                abtBtn.Text = "About";
                 abtPanel.Visible = false;
             }
-            else if (e.KeyCode == Keys.Enter)
-            {
-                compareBtn_Click(this, new EventArgs());
-            }
+        }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            diffLabel.Visible = false;
         }
     }
 }
