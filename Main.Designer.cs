@@ -46,7 +46,7 @@
             textBox1.Location = new Point(17, 69);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Main String";
+            textBox1.PlaceholderText = "Main Text";
             textBox1.ScrollBars = ScrollBars.Both;
             textBox1.Size = new Size(624, 600);
             textBox1.TabIndex = 0;
@@ -57,7 +57,7 @@
             textBox2.Location = new Point(660, 70);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Compared String";
+            textBox2.PlaceholderText = "Compared Text";
             textBox2.ScrollBars = ScrollBars.Both;
             textBox2.Size = new Size(624, 600);
             textBox2.TabIndex = 1;
@@ -124,6 +124,7 @@
             // resetBtn
             // 
             resetBtn.BackColor = Color.Red;
+            resetBtn.Enabled = false;
             resetBtn.FlatStyle = FlatStyle.Flat;
             resetBtn.ForeColor = Color.White;
             resetBtn.Location = new Point(357, 15);
@@ -140,8 +141,8 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            BackColor = SystemColors.Control;
-            ClientSize = new Size(1297, 684);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(1302, 684);
             Controls.Add(resetBtn);
             Controls.Add(abtPanel);
             Controls.Add(abtBtn);

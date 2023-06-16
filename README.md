@@ -7,7 +7,7 @@ This application allows you to compare the text in two input boxes and displays 
 - Compare the text in two input boxes
 - Show the number of differences in a label
 
-## Installation 
+## Installation and Usage
 
 To run this application, you need to have .NET 7 installed on your machine.
 
@@ -17,15 +17,15 @@ To run this application, you need to have .NET 7 installed on your machine.
    git clone https://github.com/m-azra3l/StringComparer.git
    ```
 
+   Alternatively, you can run the application by launching the compiled version that is in the "bin" folder or complete the remaining steps.
+
 2. Build the project:
 
    ```shell
    dotnet build
    ```
 
-## Usage
-
-1. Launch the application.
+3. Launch the application.
 
     ```shell
     dotnet run

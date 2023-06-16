@@ -50,18 +50,24 @@ namespace StringComparer
             if (differenceCount == 0)
             {
                 // If there are no differences, set the ForeColor property of
-                // the diffLabel control to green and set its Text property to "No differences"
+                // the diffLabel control to green,
+                // set its Text property to "No differences"
+                // and enables the resetBtn
                 diffLabel.ForeColor = Color.Green;
                 diffLabel.Visible = true;
                 diffLabel.Text = "No differences";
+                resetBtn.Enabled = true;
             }
             else
             {
-                // If there are differences, set the ForeColor property of the diffLabel control
-                // to red and set its Text property to show the number of differences
+                // If there are differences, set the ForeColor
+                // property of the diffLabel control to red,
+                // set its Text property to show the number of differences
+                // and enables the resetBtn
                 diffLabel.ForeColor = Color.Red;
                 diffLabel.Visible = true;
                 diffLabel.Text = $"Differences: {differenceCount}";
+                resetBtn.Enabled = true;
             }
         }
 
@@ -101,10 +107,12 @@ namespace StringComparer
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            // Clear the text in both text boxes and hide the diffLabel control
+            // Clear the text in both text boxes, hide the diffLabel control
+            // and disables the resetBtn
             textBox1.Text = "";
             textBox2.Text = "";
             diffLabel.Visible = false;
+            resetBtn.Enabled = false;
         }
     }
 }
