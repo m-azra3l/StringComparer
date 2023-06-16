@@ -25,6 +25,11 @@ namespace StringComparer
             int differenceCount = 0;
             string differences1 = "";
             string differences2 = "";
+            if (String.IsNullOrWhiteSpace(text1) || String.IsNullOrWhiteSpace(text2))
+            {
+                MessageBox.Show("","ERROR");
+                return;
+            }
 
             progressBar1.Maximum = Math.Max(text1.Length, text2.Length);
             progressBar1.Value = 0;
