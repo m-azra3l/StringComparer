@@ -62,21 +62,21 @@
             textBox3.Location = new Point(83, 509);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Difference";
+            textBox3.PlaceholderText = "Difference with Compared String";
             textBox3.ScrollBars = ScrollBars.Both;
             textBox3.Size = new Size(555, 278);
             textBox3.TabIndex = 2;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(83, 469);
+            progressBar1.Location = new Point(83, 454);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(1211, 34);
             progressBar1.TabIndex = 3;
             // 
             // compareBtn
             // 
-            compareBtn.Location = new Point(593, 369);
+            compareBtn.Location = new Point(593, 362);
             compareBtn.Name = "compareBtn";
             compareBtn.Size = new Size(187, 53);
             compareBtn.TabIndex = 4;
@@ -87,10 +87,10 @@
             // diffLabel
             // 
             diffLabel.AutoSize = true;
-            diffLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            diffLabel.Location = new Point(88, 428);
+            diffLabel.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            diffLabel.Location = new Point(80, 413);
             diffLabel.Name = "diffLabel";
-            diffLabel.Size = new Size(78, 32);
+            diffLabel.Size = new Size(65, 28);
             diffLabel.TabIndex = 5;
             diffLabel.Text = "label1";
             diffLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -101,7 +101,7 @@
             textBox4.Location = new Point(739, 509);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Difference";
+            textBox4.PlaceholderText = "Difference with Main String";
             textBox4.ScrollBars = ScrollBars.Both;
             textBox4.Size = new Size(555, 278);
             textBox4.TabIndex = 6;
