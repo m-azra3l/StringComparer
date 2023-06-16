@@ -39,44 +39,44 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(83, 76);
+            textBox1.Location = new Point(88, 60);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Main String";
             textBox1.ScrollBars = ScrollBars.Both;
-            textBox1.Size = new Size(555, 368);
+            textBox1.Size = new Size(555, 278);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(739, 76);
+            textBox2.Location = new Point(744, 60);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Compared String";
             textBox2.ScrollBars = ScrollBars.Both;
-            textBox2.Size = new Size(555, 368);
+            textBox2.Size = new Size(555, 278);
             textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(83, 605);
+            textBox3.Location = new Point(83, 509);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Difference";
             textBox3.ScrollBars = ScrollBars.Both;
-            textBox3.Size = new Size(555, 213);
+            textBox3.Size = new Size(555, 278);
             textBox3.TabIndex = 2;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(83, 565);
+            progressBar1.Location = new Point(83, 469);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(1211, 34);
             progressBar1.TabIndex = 3;
             // 
             // compareBtn
             // 
-            compareBtn.Location = new Point(593, 465);
+            compareBtn.Location = new Point(593, 369);
             compareBtn.Name = "compareBtn";
             compareBtn.Size = new Size(187, 53);
             compareBtn.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             diffLabel.AutoSize = true;
             diffLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            diffLabel.Location = new Point(88, 524);
+            diffLabel.Location = new Point(88, 428);
             diffLabel.Name = "diffLabel";
             diffLabel.Size = new Size(78, 32);
             diffLabel.TabIndex = 5;
@@ -98,12 +98,12 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(739, 605);
+            textBox4.Location = new Point(739, 509);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "Difference";
             textBox4.ScrollBars = ScrollBars.Both;
-            textBox4.Size = new Size(555, 213);
+            textBox4.Size = new Size(555, 278);
             textBox4.TabIndex = 6;
             // 
             // Main
