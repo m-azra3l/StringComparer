@@ -22,7 +22,8 @@ namespace StringComparer
             string text1 = textBox1.Text;
             string text2 = textBox2.Text;
             int differenceCount = 0;
-            string differences = "";
+            string differences1 = "";
+            string differences2 = "";
 
             progressBar1.Maximum = Math.Max(text1.Length, text2.Length);
             progressBar1.Value = 0;
@@ -32,12 +33,19 @@ namespace StringComparer
                 if (text1[i] != text2[i])
                 {
                     differenceCount++;
-                    differences += $"{text1[i]} != {text2[i]}\n";
+                    differences1 += $"{text1[i]} ";
+                    differences2 += $"{text2[i]} ";
+                }
+                else
+                {
+                    differences1 += "  ";
+                    differences2 += "  ";
                 }
                 progressBar1.Value++;
             }
             progressBar1.Value = 100;
-            textBox3.Text = differences;
+            textBox3.Text = differences1;
+            textBox4.Text = differences2;
 
             if (differenceCount == 0)
             {
