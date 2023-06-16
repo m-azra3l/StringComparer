@@ -32,7 +32,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             progressBar1 = new ProgressBar();
-            button1 = new Button();
+            compareBtn = new Button();
+            diffLabel = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -72,14 +73,27 @@
             progressBar1.Size = new Size(1211, 34);
             progressBar1.TabIndex = 3;
             // 
-            // button1
+            // compareBtn
             // 
-            button1.Location = new Point(593, 484);
-            button1.Name = "button1";
-            button1.Size = new Size(187, 34);
-            button1.TabIndex = 4;
-            button1.Text = "Compare";
-            button1.UseVisualStyleBackColor = true;
+            compareBtn.Location = new Point(593, 465);
+            compareBtn.Name = "compareBtn";
+            compareBtn.Size = new Size(187, 53);
+            compareBtn.TabIndex = 4;
+            compareBtn.Text = "Compare";
+            compareBtn.UseVisualStyleBackColor = true;
+            compareBtn.Click += compareBtn_Click;
+            // 
+            // diffLabel
+            // 
+            diffLabel.AutoSize = true;
+            diffLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            diffLabel.Location = new Point(88, 524);
+            diffLabel.Name = "diffLabel";
+            diffLabel.Size = new Size(78, 32);
+            diffLabel.TabIndex = 5;
+            diffLabel.Text = "label1";
+            diffLabel.TextAlign = ContentAlignment.MiddleCenter;
+            diffLabel.Visible = false;
             // 
             // Main
             // 
@@ -87,7 +101,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1378, 844);
-            Controls.Add(button1);
+            Controls.Add(diffLabel);
+            Controls.Add(compareBtn);
             Controls.Add(progressBar1);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -107,6 +122,7 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private ProgressBar progressBar1;
-        private Button button1;
+        private Button compareBtn;
+        private Label diffLabel;
     }
 }
