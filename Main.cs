@@ -58,7 +58,6 @@ namespace StringComparer
                 diffLabel.Visible = true;
                 diffLabel.Text = $"Differences: {differenceCount}";
             }
-            progressBar1.Value = 0;
         }
 
     }
