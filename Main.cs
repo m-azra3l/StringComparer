@@ -72,6 +72,10 @@ namespace StringComparer
             {
                 abtPanel.Visible = false;
             }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                compareBtn_Click(this, new EventArgs());
+            }
         }
 
     }
