@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             compareBtn = new Button();
@@ -103,7 +104,7 @@
             // 
             abtPanel.BorderStyle = BorderStyle.Fixed3D;
             abtPanel.Controls.Add(textBox5);
-            abtPanel.Location = new Point(377, 118);
+            abtPanel.Location = new Point(377, 80);
             abtPanel.Name = "abtPanel";
             abtPanel.Size = new Size(595, 522);
             abtPanel.TabIndex = 8;
@@ -119,6 +120,7 @@
             textBox5.ScrollBars = ScrollBars.Both;
             textBox5.Size = new Size(585, 512);
             textBox5.TabIndex = 2;
+            textBox5.Text = resources.GetString("textBox5.Text");
             // 
             // resetBtn
             // 

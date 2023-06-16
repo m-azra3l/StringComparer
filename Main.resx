@@ -57,4 +57,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>About 
+
+This application allows you to compare the text in two input boxes and displays the differences between them. 
+
+To use this application, simply enter text in both input boxes and click the "Compare" button. The differences between the two texts will be differences will be shown in a label.
+
+This application is written in C# and is designed to be easy to use and understand. I hope you find it useful!</value>
+  </data>
 </root>
