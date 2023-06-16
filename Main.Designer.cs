@@ -104,9 +104,9 @@
             // 
             abtPanel.BorderStyle = BorderStyle.Fixed3D;
             abtPanel.Controls.Add(textBox5);
-            abtPanel.Location = new Point(377, 80);
+            abtPanel.Location = new Point(377, 149);
             abtPanel.Name = "abtPanel";
-            abtPanel.Size = new Size(595, 522);
+            abtPanel.Size = new Size(595, 346);
             abtPanel.TabIndex = 8;
             abtPanel.Visible = false;
             // 
@@ -117,8 +117,7 @@
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
-            textBox5.ScrollBars = ScrollBars.Both;
-            textBox5.Size = new Size(585, 512);
+            textBox5.Size = new Size(585, 336);
             textBox5.TabIndex = 2;
             textBox5.Text = resources.GetString("textBox5.Text");
             // 

@@ -7,9 +7,9 @@ This application allows you to compare the text in two input boxes and displays 
 - Compare the text in two input boxes
 - Show the number of differences in a label
 
-## Usage
+## Installation 
 
-To use this application, you need to have .NET 7 installed on your machine.
+To run this application, you need to have .NET 7 installed on your machine.
 
 1. Clone the repository:
 
@@ -35,7 +35,7 @@ Simply enter text in both input boxes and click the "Compare" button. The number
 
 ## Requirements
 
-This application is written in C# using dotnet 7 and requires the .NET Framework to run.
+This application is written in C# using .NET 7 and requires the .NET Framework to run.
 
 
 ## Author
