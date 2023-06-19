@@ -31,7 +31,7 @@ To run this application, you need to have .NET 7 installed on your machine.
     dotnet run
     ```
 
-Simply enter text in both input boxes and click the "Compare" button. The number differences between the two texts will be displayed will be shown in a label.
+Simply enter text in both input boxes and click the "Compare" button. The number of differences between the two texts will be displayed will be shown in a label.
 
 ## Requirements
 
